@@ -1,20 +1,20 @@
 import React from 'react';
 import Exercise from './Exercise';
 
-function ExerciseList({ exercises }) {
+function ExerciseList({ exercises, deleteExercise, onEdit }) {
     return (
         <table id="exercises">
             <thead>
                 <tr>
-                    <th>Title</th>
-                    <th>Year</th>
-                    <th>Language</th>
-                    <th>Edit</th>
-                    <th>Delete</th>
+                    <th>Name</th>
+                    <th>Reps</th>
+                    <th>Weight</th>
+                    <th>Date</th>
+                    <th>Modify</th>
                 </tr>
             </thead>
             <tbody>
-                {exercises.map((exercise, i) => <Exercise exercise={exercise}
+                {exercises.map((exercise, i) => <Exercise exercise={exercise} deleteExercise={deleteExercise} onEdit={onEdit}
                     key={i} />)}
             </tbody>
         </table>

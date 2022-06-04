@@ -1,9 +1,26 @@
 body {
-  background-color: rgb(255,255,255);
+  background-color: rgb(223, 236, 245);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(51, 16, 71);
+  margin: 0 10vw;
+  padding: 2rem;
+}
+
+input {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .App {
   text-align: center;
+}
+
+nav a {
+  margin: 1.5rem;
+
 }
 
 .App-header {
@@ -13,26 +30,25 @@ body {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: black;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-td, th {
-  border: 1px solid #ddd;
-  padding: 8px;
+tr th {
+  background: rgb(224, 195, 97);
+  border-bottom: 2px rgb(235, 155, 135) solid;
+  padding: 0.79em;
+  color: rgb(16, 65, 99);
 }
 
-tr:nth-child(even){background-color: #f2f2f2;}
+tr td {
+  border: 2px rgba(112, 177, 214, 0.507) dotted;
+  background: rgb(216, 245, 247);
+  padding: 0.5em;
+}
 
-tr:hover {background-color: #ddd;}
-
-th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: #04AA6D;
-  color: white;
+#exercises {
+  margin: 2rem;
 }
